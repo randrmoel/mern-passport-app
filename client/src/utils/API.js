@@ -3,87 +3,87 @@ import axios from "axios";
 export default {
     // Add Category Categories are unique
     addCat: function(data){
-        return axios.post("/cat", data);
+        return axios.post("/api/users/cat", data);
     },
 
     findAllCat: function(data){
-        return axios.get("/allcat", data);
+        return axios.get("/api/users/allcat", data);
     },
 
     findCatByName: function(data){
-        return axios.get("/catbyname", data);
+        return axios.get("/api/users/catbyname", data);
     },
 
     delCatByName: function(data){
-        return axios.delete("/delcatname", data);
+        return axios.delete("/api/users/delcatname", data);
     },
 
     delCatByID: function(data){
-        return axios.delete("/cat", data);
+        return axios.delete("/api/users/cat", data);
     },
 
     addSkill: function(data){
-        return axios.post("/skill", data);
+        return axios.post("/api/users/skill", data);
     },
 
     getAllSkillsByUser: function(data){
-        return axios.get("/skill", data)
+        return axios.get("/api/users/skill", data)
     },
 
     delSkillById: function(data){
-        return axios.delete("/skill", data)
+        return axios.delete("/api/users/skill", data)
     },
     masterSkill: function(data){
-        return axios.put("/skill", data)
+        return axios.put("/api/users/skill", data)
     },
     unmasterSkill: function(data){
-        return axios.put("/unskill", data)
+        return axios.put("/api/users/unskill", data)
     },
     getAllMasteredSkills: function(data){
-        return axios.get("/allmasteredskill", data)
+        return axios.get("/api/users/allmasteredskill", data)
     },
 
     getAllUnmasteredSkills: function(data){
-        return axios.get("/allunmasteredskill", data)
+        return axios.get("/api/users/allunmasteredskill", data)
     },
 
     addDef: function(data){
-        return axios.post("/def", data)
+        return axios.post("/api/users/def", data)
     },
 
     updateDef: function(data){
-        return axios.put("/def", data)
+        return axios.put("/api/users/def", data)
     },
 
     getDefById: function(data){
-        return axios.get("/def", data)
+        return axios.get("/api/users/def", data)
     },
 
     delDefById: function(data){
-        return axios.delete("/def", data)
+        return axios.delete("/api/users/def", data)
     },
 
     getAllDefByUser: function(data){
-        return axios.get("/alldeff", data)
+        return axios.get("/api/users/alldeff", data)
     },
 
     addLib: function(data){
-        return axios.post("/lib", data)
+        return axios.post("/api/users/lib", data)
     },
 
     updateLibUrl: function(data){
-        return axios.put("/liburl", data)
+        return axios.put("/api/users/liburl", data)
     },
     updateLibType: function(data){
-        return axios.put("/libtype", data)
+        return axios.put("/api/users/libtype", data)
     },
 
     getAllLibByUser: function(data){
-        return axios.get("/alllib", data)
+        return axios.get("/api/users/alllib", data)
     },
 
     getLibById: function(data){
-        return axios.get("/lib", data)
+        return axios.get("/api/users/lib", data)
     },
 
     getAllVidLib: function(data){
@@ -91,10 +91,10 @@ export default {
     },
 
     getAllTextLib: function(data){
-        return axios.get("/alltextlib", data)
+        return axios.get("/api/users/alltextlib", data)
     },
 
-    dellLibById: function(data){
-        return axios.delete("/lib", data)
+    delLibById: function(data){
+        return axios.delete("/api/users/lib", data)
         }
     }
